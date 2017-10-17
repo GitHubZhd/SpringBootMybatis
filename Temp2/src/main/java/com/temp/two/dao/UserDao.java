@@ -1,6 +1,7 @@
-package com.study.mybatis.dao;
+package com.temp.two.dao;
 
-import com.study.mybatis.model.User;
+
+import com.temp.two.model.User;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

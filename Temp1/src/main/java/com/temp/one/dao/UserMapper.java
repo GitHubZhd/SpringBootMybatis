@@ -1,6 +1,6 @@
-package com.study.mybatis.dao;
+package com.temp.one.dao;
 
-import com.study.mybatis.model.User;
+import com.temp.one.model.User;
 import org.apache.ibatis.annotations.*;
 
 /**
@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.*;
 @Mapper
 public interface UserMapper {
     @Select("select * from user where age = #{age}")
-    User findUserByAge(@Param("age")int age);
+    User findUserByAge(@Param("age") int age);
 
     @Insert("insert into user(name,age,sex) values (#{name},#{age},#{sex})")
     void add(User user);

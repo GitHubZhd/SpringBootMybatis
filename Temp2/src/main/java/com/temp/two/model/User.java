@@ -1,4 +1,4 @@
-package com.study.mybatis.model;
+package com.temp.two.model;
 
 import lombok.Getter;
 import lombok.Setter;
