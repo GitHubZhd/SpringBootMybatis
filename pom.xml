@@ -9,6 +9,7 @@
 	<modules>
 		<module>Temp1</module>
 		<module>Temp2</module>
+		<module>Temp3</module>
 	</modules>
 	<packaging>pom</packaging>
 
