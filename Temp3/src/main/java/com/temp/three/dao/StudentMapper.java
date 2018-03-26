@@ -6,13 +6,16 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.springframework.stereotype.Component;
+
 @Mapper
+@Component
 public interface StudentMapper {
 
     @Select("select * from student;")
-    public List<Map<String,Object>> find();
+    List<Map<String,Object>> find();
 
     @Insert("insert into student(id,name,age,score_sum,score_avg) "+
             "values(#{id},'Jim',33,200,100)")
-    public int insert(@Param("id")int id);
+    int insert(@Param("id") int id);
 }
